@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Scraper</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>🌐 Web Scraper</h1>
-        <form id="scrapeForm">
-            <input type="text" id="url" placeholder="Enter website URL (e.g., https://example.com)" required>
-            <button type="submit">Scrape Data</button>
-        </form>
-        <div id="loading" class="hidden">⏳ Loading...</div>
-        <div id="results"></div>
+    <div id="welcome-screen" class="container">
+        <h1>Welcome to the Quiz Game</h1>
+        <button id="start-btn">Start Quiz</button>
     </div>
+    
+    <div id="quiz-container" class="container" style="display: none;">
+        <h2 id="question-text"></h2>
+        <br>
+        <div class="options" id="options-container"></div>
+        <p id="score">Score: 0</p>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
